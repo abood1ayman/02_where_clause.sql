@@ -1,0 +1,27 @@
+-- Get all employees who are older than 30
+SELECT * FROM employees
+WHERE age > 30;
+
+-- Get all customers who live in Egypt
+SELECT name, country FROM customers
+WHERE country = 'Egypt';
+
+-- Get products that cost less than 100
+SELECT product_name, price FROM products
+WHERE price < 100;
+
+-- Get students who scored between 70 and 90
+SELECT name, score FROM students
+WHERE score BETWEEN 70 AND 90;
+
+-- Get employees whose name starts with 'A'
+SELECT name FROM employees
+WHERE name LIKE 'A%';
+
+-- Get items that are NOT in stock
+SELECT item_name FROM inventory
+WHERE quantity = 0;
+
+-- Get users who registered before 2024
+SELECT username, created_at FROM users
+WHERE created_at < '2024-01-01';
